@@ -1,19 +1,19 @@
+// swift-tools-version: 5.9
+// The swift-tools-version declares the minimum version of Swift required to build this package.
+
+import PackageDescription
+
 let package = Package(
-    name: "DateFormatting",
-    defaultLocalization: "en",
+    name: "ResolverProtocol",
     platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "ResolverProtocol",
-            targets: ["ResolverProtocol"]
-        )
+            targets: ["ResolverProtocol"]),
     ],
-    dependencies: [],
     targets: [
         .target(
             name: "ResolverProtocol",
-            dependencies: [],
-            path: "Classes"
-        ),
+            path: "Classes"),
     ]
 )
